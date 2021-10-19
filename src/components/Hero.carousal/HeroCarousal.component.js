@@ -1,10 +1,10 @@
-import React,{useState,useEffect} from "react";
+import React, {useState, useEffect} from "react";
+
 import HeroSlider from "react-slick";
 import axios from "axios";
 
 //component
-import {NextArrow,PrevArrow} from "./Arrow.carousal";
-
+import{NextArrow,PrevArrow} from "./Arrow.carousal.js"
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,7 +20,7 @@ useEffect(() => {
   };
   requestNowPlayingMovies();
 }, []);
-  console.log(images);
+
 
   const settingsLg = {
     arrows: true,
